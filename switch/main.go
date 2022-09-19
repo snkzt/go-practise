@@ -18,6 +18,8 @@ func main() {
 		fmt.Println("three")
 	}
 
+	// You can use comma to separate multiple expressions in the same case statement.
+	// default case is optional.
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("It's the Weekend XD")
@@ -26,6 +28,8 @@ func main() {
 	}
 
 	t := time.Now()
+	// Switch without an expression is an alternative way to
+	// express if/else logic.
 	switch {
 	case t.Hour() < 12:
 		fmt.Println("It's time for coffee before noon")
@@ -34,6 +38,7 @@ func main() {
 	}
 
 	whatAmI := func(i interface{}) {
+		// A type switch compares types instead of values.
 		switch t := i.(type) {
 		case bool:
 			fmt.Println("I'm a boolean")
@@ -48,3 +53,4 @@ func main() {
 	whatAmI(7)
 	whatAmI("Egg")
 }
+
