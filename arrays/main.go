@@ -25,11 +25,11 @@ func main() {
 	fmt.Println("declare and initialise:", b)
 
 	// [[0,1,2],[0,1,2]]
-	var twoDemensions [2][3]int
+	var twoDimensions [2][3]int
 	for i := 0; i < 2; i++ {
 		for j := 0; j < 3; j++ {
-			twoDemensions[i][j] = i + j
+			twoDimensions[i][j] = i + j
 		}
 	}
-	fmt.Println("2D:", twoDemensions)
+	fmt.Println("2D:", twoDimensions)
 }
