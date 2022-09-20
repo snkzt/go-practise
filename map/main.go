@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 
 	// make(map[key type]value type)
-	m := make(map[string]int)
+	m := map[string]int{}
 
 	m["k1"] = 7
 	m["k2"] = 13
