@@ -26,8 +26,9 @@ func main() {
 		fmt.Println("key:", k)
 	}
 
+	// Range on string iteraqtaes over Unicode code points.
+	// Value will return as rune
 	for i, c := range "go" {
 		fmt.Println(i, c)
 	}
-
 }
