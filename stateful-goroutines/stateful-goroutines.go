@@ -8,7 +8,7 @@ import (
 )
 
 // To sychronise access to shared state across multiple goroutines,
-// this is another implicit option using built-in sync features of
+// this is another option using built-in sync features of
 // goroutine and channels.
 // This achieves sharing memory by communicating and gaving each piece
 // of data owned by exactly 1 goroutine.
