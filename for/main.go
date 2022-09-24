@@ -8,7 +8,7 @@ func main() {
 	// A single condition
 	for i <= 3 {
 		fmt.Println(i)
-		i += 1
+		i ++
 	}
 
 	// Initial/condition/action after for loop
